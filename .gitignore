@@ -1,0 +1,22 @@
+*.pyc
+.DS_Store
+/.venv/
+/.vagrant/
+/Vagrantfile.local
+*.pyc
+*.pyo
+.installed.cfg
+bin
+develop-eggs
+# dist
+downloads
+eggs
+parts
+src/*.egg-info
+lib
+lib64
+*.log
+*.pot
+.anaconda
+*.DS_Store
+*.sass-cache

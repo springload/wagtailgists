@@ -1,2 +1,2 @@
 # wagtailgists
-Useful snippets for Wagtail 
+Useful snippets for Wagtail. Under permanent construction.
