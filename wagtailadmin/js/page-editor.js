@@ -4,7 +4,13 @@ var halloPlugins = {
     'halloformat': {},
     'halloheadings': {formatBlocks: ["p", "h1", "h2", "h3", "h4", "h5"]},
     'hallolists': {},
-    // 'hallohr': {},
+    'halloreundo': {},
+    'hallowagtaillink': {}
+};
+
+var introHalloPlugins = {
+    'halloformat': {},
+    'halloheadings': {formatBlocks: ["p"]},
     'halloreundo': {},
     'hallowagtaillink': {}
 };
@@ -48,10 +54,19 @@ function makeRichTextEditable(id) {
         removeStylingPending = false;
     }
 
+    // Set Hallo plugins depending if field is intro or not (limited plugins for intro fields)
+    var plugins;
+    if($(input).attr("name") === "intro") {
+        plugins = introHalloPlugins;
+    }
+    else {
+        plugins = halloPlugins;
+    }
+
     richText.hallo({
         toolbar: 'halloToolbarFixed',
         toolbarCssClass: (input.closest('.object').hasClass('full')) ? 'full' : '',
-        plugins: halloPlugins
+        plugins: plugins
     }).bind('hallomodified', function(event, data) {
         input.val(data.content);
         if (!removeStylingPending) {
