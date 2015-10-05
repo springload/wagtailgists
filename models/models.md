@@ -7,3 +7,6 @@
 * [Routable page](./routable_page.py) Fairly example on how to implement several URL pattern routes in on Wagtail Page class.
 
 * [HTML cleanup Signals](./signals.py) How to cleanup the HTML markup generated in a RichTextField.
+* 
+
+Assigning Aownership to all tables in postgres: http://stackoverflow.com/questions/1348126/modify-owner-on-all-tables-simultaneously-in-postgresql
