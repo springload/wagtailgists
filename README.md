@@ -8,6 +8,7 @@ Including abstract classes (interfaces), utilities, signals and so on...
 * [Models](./models/models.md)
 * [Tags](./customtags/customtags.md)
 * [Snippets](./snippets/snippets.md)
+* [Production gotchas](./production/README.md)
 
 ## Generate clean fixtures
 
